@@ -1,0 +1,46 @@
+﻿@model IEnumerable<WebApp.Models.Panier>
+
+@{
+    ViewData["Title"] = "PanierIndex";
+}
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<div class="container-fluid">
+    <div class="row mb-30">
+        <div class="col-md-12">
+            <h2 class="main-title">Featured Documents</h2>
+        </div>
+
+        @foreach (var item in Model)
+        {
+            <!--  %String m1= "C:\\Users\\admi\\Desktop\\site_jee\\"+rs.getString(2).replaceAll(" ", "-")+".jpg"; %> -->
+            <div class="col-lg-2 col-md-3 col-xs-6">
+                <div class="note">
+                    <div class="note-meta-thumb">
+                        <a href="C:\Users\admi\Desktop\site_jee\think-like-a-man.pdf">
+                            <img src="~/Images/@Url.Content(item.Adress)" alt="Advanced Grammar in Use with Answers" />
+                            <h3 class="note-title"> @Html.DisplayFor(modelItem => item.Title)</h3>
+                        </a>
+                    </div>
+                    <div class="note-action">
+                        <a class="more-link" asp-action="PanierDetails" asp-route-id="@item.Id">Read more</a>&emsp;&emsp;&emsp;&nbsp;<br>
+                        <a asp-action="PanierDelete" asp-route-id="@item.Id">Delete</a>&emsp; @Html.DisplayFor(modelItem => item.Price) DH
+                    </div>
+                </div>
+            </div>
+
+        }
+
+    </div>
+
+    <nav class="text-center">
+
+        <h3>thanks</h3>
+    </nav>
+</div>
+<!-- ********************************************************************************************** -->

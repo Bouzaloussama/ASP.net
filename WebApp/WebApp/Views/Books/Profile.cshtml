@@ -1,0 +1,129 @@
+﻿@model WebApp.Models.User
+
+
+
+<!---###################################################################-->
+
+
+<body>
+
+    <header>
+
+        <div class="name ">
+            @Html.DisplayFor(model => model.Name)    @Html.DisplayFor(model => model.Last_Name)
+        </div>
+
+        <div class="ava">
+            <img src="~/Images/le-defi-de-lanti-gravitation-scan.jpg" alt="avatar" style="" />
+        </div>
+
+    </header>
+    <div class="content">
+        <aside class="info ">
+            <div class="box">
+                <p class="title">
+                    <i class="fa fa-info-circle"></i>Contact
+                </p>
+
+
+                <p class="padd-top">
+                    <i class="fa fa-birthday-cake"></i>
+                    @Html.DisplayFor(model => model.Email)
+                </p>
+
+                <p>
+                    <i class="fa fa-phone"></i>
+                    @Html.DisplayFor(model => model.Phone)
+                </p>
+
+                <p>
+                    <i class="fa fa-envelope"></i>
+                    @Html.DisplayFor(model => model.Type_User)
+                </p>
+
+                <p>
+                    <i class="fa fa-home"></i>
+                    123 lorem ipsum,
+                </p>
+
+            </div>
+
+            <div class="box">
+
+                <p class="title">
+                    <i class="fa fa-asterisk"></i>
+                    Skill
+                </p>
+
+                <p class="padd-top">HTML, CSS</p>
+                <div class="skill">
+
+                    <div class="skill-right r1"></div>
+                </div>
+
+                <p>JavaScript/jQuery</p>
+                <div class="skill">
+
+                    <div class="skill-right r2"></div>
+                </div>
+
+                <p>PHP, SQL</p>
+                <div class="skill">
+
+                    <div class="skill-right r3"></div>
+                </div>
+            </div>
+
+        </aside>
+
+
+        <section class="main">
+            <div class="box">
+                <p class="title">
+                    <i class="fa fa-graduation-cap"></i>
+                    Education
+                </p>
+                <p class="padd-top">
+
+                    JEE
+                </p>
+            </div>
+
+
+            <div class="box">
+                <p class="title">
+                    <i class="fa fa-flag"></i>
+                    activity
+                </p>
+                <br>
+                <p class="padd-top">
+                    No activity .
+                </p>
+            </div>
+
+
+
+            <div>
+                <div class="box">
+                    <p class="title">
+                        <i class="fa fa-crosshairs" aria-hidden="true"></i>
+                        Career goals
+                    </p>
+                    <br>
+                    <p class="padd-top">
+                        20/20 in JEE why not. <br>
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+   
+    <div>
+       
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+</body>
+

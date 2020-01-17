@@ -1,0 +1,45 @@
+﻿@model WebApp.Models.Panier
+
+<h2>Read more</h2>
+<br />
+<br />
+
+<div class="container-fluid">
+    <div class="row mb-30">
+        <div class="col-md-12">
+            <h2 class="main-title">Featured Documents</h2>
+        </div>
+
+
+        <!--  %String m1= "C:\\Users\\admi\\Desktop\\site_jee\\"+rs.getString(2).replaceAll(" ", "-")+".jpg"; %> -->
+        <div class="col-lg-2 col-md-3 col-xs-6">
+            <div class="note">
+                <div class="note-meta-thumb">
+                    <a href="C:\Users\admi\Desktop\site_jee\think-like-a-man.pdf">
+                        <img src="~/Images/@Url.Content(@Model.Adress)" alt="Advanced Grammar in Use with Answers" />
+                        <h3 class="note-title"> @Html.DisplayFor(model => model.Title)</h3>
+                    </a>
+                </div>
+                <div class="note-action">
+                    &emsp;&emsp;&emsp;&nbsp;<br>
+                    <a asp-action="PanierDelete" asp-route-id="@Model.Id">Delete</a><br />
+                    The Author name :  @Html.DisplayFor(model => model.Author)<br />
+                    The Genre : @Html.DisplayFor(model => model.Genre)<br />
+                    The Price :  @Html.DisplayFor(model => model.Price) DH
+                    <br />
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+   
+        <a asp-action="PanierIndex">Back to List</a>
+    </div>
+
+    <nav class="text-center">
+
+        <h3>thanks</h3>
+    </nav>
+</div>
+

@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\Css\bootstrap-social.css" />
+    <Content Remove="wwwroot\Css\bootstrap.min.css" />
+    <Content Remove="wwwroot\Css\bootstrap.min.js" />
+    <Content Remove="wwwroot\Css\font-awesome.min.css" />
+    <Content Remove="wwwroot\Css\jquery-3.2.1.min.js" />
+    <Content Remove="wwwroot\Css\jquery-ui.css" />
+    <Content Remove="wwwroot\Css\jquery-ui.min.js" />
+    <Content Remove="wwwroot\Css\jquery.bxslider.min.js" />
+    <Content Remove="wwwroot\Css\monstyle.css" />
+    <Content Remove="wwwroot\Css\new1.css" />
+    <Content Remove="wwwroot\Css\new2.css" />
+    <Content Remove="wwwroot\Css\profile.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Css\bootstrap-social.css" />
+    <None Include="wwwroot\Css\bootstrap.min.css" />
+    <None Include="wwwroot\Css\bootstrap.min.js" />
+    <None Include="wwwroot\Css\font-awesome.min.css" />
+    <None Include="wwwroot\Css\jquery-3.2.1.min.js" />
+    <None Include="wwwroot\Css\jquery-ui.css" />
+    <None Include="wwwroot\Css\jquery-ui.min.js" />
+    <None Include="wwwroot\Css\jquery.bxslider.min.js" />
+    <None Include="wwwroot\Css\monstyle.css" />
+    <None Include="wwwroot\Css\new1.css" />
+    <None Include="wwwroot\Css\new2.css" />
+    <None Include="wwwroot\Css\profile.css" />
+    <None Include="wwwroot\Images\among-the-sons-of-seth.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.10.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\css\manifest.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+
+
+</Project>

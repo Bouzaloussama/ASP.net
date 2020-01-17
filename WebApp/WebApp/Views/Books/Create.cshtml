@@ -1,0 +1,98 @@
+﻿@model WebApp.Models.Book
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<br />
+<!--##################################-->
+<div class="container-fluid">
+
+    <div class="row mb-30">
+        <div class="col-md-12">
+            <h2 class="main-title">Add Documents</h2>
+        </div>
+
+
+        <form asp-action="Create">
+
+
+            <div class="form-group">
+                <label class="form-label col-sm-3" for="email">Email</label>
+                <div class="col-sm-9">
+                    <input class="form-input form-control" type="text"  name="email" id="email" value="" placeholder="xxxxxxxx@gmail.com" required />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label col-sm-3" for="password">Password</label>
+                <div class="col-sm-9">
+                    <input class="form-input form-control" type="password" name="password" id="password" value="" placeholder="Password" required />
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <label class="form-label col-sm-3" for="name">Book File</label>
+                <div class="col-sm-9">
+                    <input class="form-input form-control" type="file" asp-for="Adress" value="" placeholder="file" required />
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label class="form-label col-sm-3" for="name">Book Title</label>
+                <div class="col-sm-9">
+                    <input class="form-input form-control" type="text" asp-for="Title" value="" placeholder="bookName" required />
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label class="form-label col-sm-3" for="name">author Name</label>
+                <div class="col-sm-9">
+                    <input class="form-input form-control" type="text" asp-for="Author" value="" placeholder="author Name" required />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-label col-sm-3" for="name">Book Genre</label>
+                <div class="col-sm-9">
+                    <input class="form-input form-control" type="text" asp-for="Genre" value="" placeholder="author Name" required />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label col-sm-3" for="name">Book Date</label>
+                <div class="col-sm-9">
+                    <input class="form-input form-control" type="date" asp-for="ReleaseDate" asp-validation-for="ReleaseDate" value="" placeholder="Date" required />
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label class="form-label col-sm-3" for="name">Book Price</label>
+                <div class="col-sm-9">
+                    <input class="form-input form-control" type="number" asp-for="Price" value="" placeholder="price" required />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-9">
+                    <button class="btn btn-primary btn-block" type="submit">Add Book</button>
+                </div>
+            </div>
+
+        </form>
+
+
+    </div>
+    <div>
+        <a asp-action="Index">Back to Home</a>
+    </div>
+    <nav class="text-center">
+
+        <h3>thanks</h3>
+    </nav>
+</div>
+
